@@ -23,7 +23,7 @@ We know that most of PHPFusion developers here, there might not be keen to try o
 Installation Guide
 ---
 
-###System Requirements
+### System Requirements
 
 1. Download and install Docker Desktop (https://www.docker.com/products/docker-desktop/)
 2. Download and install Node.js (https://nodejs.org/en/download/current)
@@ -38,13 +38,20 @@ Installation Guide
 C:\Users\username > git clone https://github.com/PHPFusion/PHPFusionDocker.git 
 ```
 
-- Start the docker container with the following command
-
-```docker-file
-docker-compose up -d
+- Browse to your newly cloned directory to start the docker with the following command
+  
+```git
+C:\Users\username\PHPFusionDocker > docker-compose up
 ```
 
-PHPFusion is now ready. You can access it via http://localhost
+![1](https://github.com/PHPFusion/PHPFusionDocker/assets/4078041/af3a08fd-cd5a-4cd7-8c64-f6035986818f)
+
+![2](https://github.com/PHPFusion/PHPFusionDocker/assets/4078041/b5104bb9-c1af-441f-9bf4-7769e8e80aa2)
+
+![3](https://github.com/PHPFusion/PHPFusionDocker/assets/4078041/2fff0a8c-ee8d-467e-b06b-4be7a77e0a40)
+
+
+PHPFusion is now ready. You can access it via ```http://localhost```
 
 ### Advanced Configuration
 
@@ -94,7 +101,6 @@ database created: phpfusion_docker
 Redis
 ---
 It comes with Redis. It runs on default port 6379, and has not password
-
 
 Contributing
 ---
