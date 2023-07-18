@@ -102,3 +102,7 @@ We are happy if you want to create a pull request or help people with their issu
 this stack is not built for production use and your changes should be made as simple as possible to follow and not specialized or custom to a specific situation.
 
 Please also note that your pull requests are always need to be made against the ``master`` branch only.
+
+License
+---
+The Docker is dual licensed GPL and MIT depending on what is fitting for you. But the CMS itself remains licensed under AGPL v3. 
