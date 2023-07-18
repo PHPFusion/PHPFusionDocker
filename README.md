@@ -4,7 +4,7 @@ PHPFusion Docker Container is a set of docker images that includes all necessary
 Our objective is to get active developers who may need to make a set up a running PHPFusion within minutes where
 they can hotswap the deployment environment and isolate different builds effectively according to requirements and needs.
 
-###General information
+### General information
 **Important:** PHPFusion Docker stack is build for local development and not for production usage.
 
 **Package Info:**
