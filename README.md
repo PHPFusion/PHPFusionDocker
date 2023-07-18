@@ -35,7 +35,7 @@ Installation Guide
   or use git in windows command prompt / terminal with the following command in Windows:
 
 ```git
-C:\Users\username > git clone https://github.com/PHPFusion/phpfusion-docker.git 
+C:\Users\username > git clone https://github.com/PHPFusion/PHPFusionDocker.git 
 ```
 
 - Start the docker container with the following command
