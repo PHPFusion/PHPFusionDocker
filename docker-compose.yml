@@ -20,21 +20,6 @@ services:
     environment:
       PMA_PORT: ${APP_HOST_PMA_PORT}
       PHP_OPCACHE_VALIDATE_TIMESTAMPS: 1
-
-      #      links:
-      #        - database
-  #  db:
-  #    image: mysql:latest
-  #    environment:
-  #      MYSQL_DATABASE: phpfusion
-  #      MYSQL_USER: phpfusion
-  #      MYSQL_PASSWORD: phpfusion
-  #      MYSQL_ALLOW_EMPTY_PASSWORD: 1
-  #    volumes:
-  #      - "./db:/docker-entrypoint-initdb.d"
-  #    networks:
-  #      - phpfusion-docker
-
   mysql:
     image: 'mysql/mysql-server:8.0'
     ports:
@@ -53,20 +38,6 @@ services:
       test: [ "CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}" ]
       retries: 3
       timeout: 5s
-
-  #  phpfusion-www:
-  #    depends_on:
-  #      - mysql
-  #    image: 'php:8.1-apache-buster'
-  #    volumes:
-  #      - "./public_html:/var/www/html"
-  #    environment:
-  #      PHP_OPCACHE_VALIDATE_TIMESTAMPS: 1
-  #    ports:
-  #      - 80:80
-  #      - 443:443
-  #    networks:
-  #      - phpfusion-docker
   phpmyadmin:
     depends_on:
       - mysql
@@ -78,8 +49,6 @@ services:
       - PMA_PORT=${DB_PORT:-3306}
     networks:
       - phpfusion-docker
-
-
   redis:
     image: "redis:alpine"
     ports:
@@ -107,4 +76,3 @@ volumes:
     driver: local
   phpfusion-redis:
     driver: local
-
