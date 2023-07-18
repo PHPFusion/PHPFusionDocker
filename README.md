@@ -105,4 +105,4 @@ Please also note that your pull requests are always need to be made against the 
 
 License
 ---
-The Docker is dual licensed GPL and MIT depending on what is fitting for you. But the CMS itself remains licensed under AGPL v3. 
+The PHPFusionDocker is dual licensed under GPL and/or MIT depending on what is fitting for you. But the CMS itself remains licensed under AGPL v3. 
